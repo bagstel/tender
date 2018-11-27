@@ -1,0 +1,13 @@
+mixin intro
+    //- The intro section
+    section.intro
+        .intro__container
+
+            .info-box
+                .info-box__header
+                    h2.info-box__title= data.introTitle
+                .info-box__body
+                    p.info-box__content= data.introContent
+                    button.btn= data.introButton
+
+        a(href="#who-we-are").intro__scroll

@@ -1,0 +1,23 @@
+.cookie-block {
+    color: #fff;
+    background-color: rgba(47, 26, 12, .8);
+    z-index: 9999;
+    min-width: 100vw;
+    &__container {
+        min-height: 100px;
+        min-width: 320px;
+        max-width: 1440px;
+        padding: 10px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__aside {
+        margin-bottom: 20px;
+        p {
+            text-align: center;
+        }
+    }
+}

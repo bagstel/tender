@@ -1,0 +1,28 @@
+mixin special-offer
+    section.special-offer#special-offer
+        .special-offer__container
+            .heading-3.heading-3--white: h3= data.specialOfferTitle
+            ul.special-offer__list
+                each item, index in data.specialOffer
+                    - var brown = index === 1 ? " special-offer__header--brown" : "";
+                    - var darkBrown = index === 2 ? " special-offer__header--dark-brown" : "";
+                    li.special-offer__item
+                        header(class="special-offer__header" + brown + darkBrown)
+                            .special-offer__title= item.title
+                            .special-offer__subtitle= item.subtitle
+                        .special-offer__body
+                            ul.special-offer__price
+                                li.special-offer__cost
+                                    span.special-offer__integer= item.costInteger
+                                    span.special-offer__fraction= item.costFraction
+                                li.special-offer__period= item.period
+                                li.special-offer__commission= item.commission
+                                li.special-offer__scale= item.scale
+
+                            ul.special-offer__sublist
+                                - for (var i = 0; i < 4; i++)
+                                    li.special-offer__subitem.fa= item.subitem[i]
+
+                            button.btn= data.specialOfferButton
+
+            div.special-offer__note *Оплата за результат, при выигранном тендере 1% от цены контракта

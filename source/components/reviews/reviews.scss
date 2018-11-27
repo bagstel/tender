@@ -1,0 +1,111 @@
+.reviews {
+    background: resolve('bg-how-to-win.png') top left;
+    &__container {
+        max-width: 1830px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 8%;
+        box-shadow: 1px -1px 3px rgba(0, 0, 1, 0.37);
+        background: rgba(255, 255, 255, .74);
+    }
+}
+
+.slider {
+    position: relative;
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__image {
+        margin-bottom: 20px;
+    }
+    &__content {
+    }
+    &__name {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    &__position {
+        color: #626262;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.9px;
+        margin-bottom: 23px;
+        text-align: center;
+    }
+    &__text {
+        color: #807f7f;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.owl-stage-outer {
+    z-index: 10;
+}
+
+.owl-nav {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    height: 83px;
+    top: 0;
+    left: -90px;
+    right: -90px;
+    bottom: 0;
+    margin: auto !important;
+    z-index: 5;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    outline: none;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    color: #FFF;
+    text-decoration: none;
+    .slider-arrow-left,
+    .slider-arrow-right {
+        opacity: .8;
+        transition: all .2s ease;
+    }
+    .slider-arrow-left {
+        margin-left: -5px;
+    }
+    .slider-arrow-right {
+        margin-right: -5px;
+    }
+}
+
+.slider-arrow-left,
+.slider-arrow-right {
+    outline: none;
+    display: block;
+    transition: all .2s ease;
+}
+
+.slider-arrow-left {
+    @include sprite($slider-arrow-left);
+}
+
+.slider-arrow-right {
+    @include sprite($slider-arrow-right);
+}

@@ -1,0 +1,16 @@
+.header {
+    &__container {
+        height: 120px;
+    }
+}
+
+.menu-button {
+    display: none;
+}
+
+.logo {
+    margin-right: 20px;
+    img {
+        max-width: 94px;
+    }
+}

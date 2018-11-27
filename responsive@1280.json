@@ -1,0 +1,39 @@
+{
+  "*.*": [
+    {
+      "width": 480,
+      "rename": {
+        "suffix": "@480"
+      }
+    },
+    {
+      "width": 768,
+      "rename": {
+        "suffix": "@768"
+      }
+    },
+    {
+      "width": 980,
+      "rename": {
+        "suffix": "@980"
+      }
+    },
+    {
+      "width": 1024,
+      "rename": {
+        "suffix": "@1024"
+      }
+    },
+    {
+      "width": 1280,
+      "rename": {
+        "suffix": "@1280"
+      }
+    },
+    {
+      "rename": {
+        "suffix": "@fallback"
+      }
+    }
+  ]
+}

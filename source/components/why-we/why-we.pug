@@ -1,0 +1,15 @@
+mixin why-we
+    section.why-we#why-we
+        .why-we__container
+            .heading-3: h3= data.whyWeTitle
+            ul.why-we__list
+                each item in data.whyWe
+                    li.why-we__item
+                        .why-we__icon
+                            img(src= item.ImagesPath + item.ImagesName + '.png', alt= item.imageAlt)
+                        div(class= item.classForColor).why-we__subtitle!= item.subTitle
+                        ul.why-we__sublist
+                            - for (var i = 0; i < 5; i++)
+                                li.why-we__subitem
+                                    i.why-we__subitem-icon.fa(class="fa-" + item.icon)
+                                    div.why-we__subitem-text= item.subItemText

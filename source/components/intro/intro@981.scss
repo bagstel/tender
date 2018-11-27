@@ -1,0 +1,7 @@
+.intro {
+    background-image: resolve('bg-intro-with-text.png');
+    min-height: 1080px;
+    &__scroll {
+        display: block;
+    }
+}

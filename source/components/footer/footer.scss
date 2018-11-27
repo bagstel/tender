@@ -1,0 +1,81 @@
+.footer {
+    background: resolve('bg-footer.png') #482f1d repeat top left;
+    box-shadow: 0 13px 29px rgba(0, 0, 0, 0.4);
+    &__container {
+        max-width: 1440px;
+        margin: 0 auto;
+        min-height: 120px;
+        padding: 10px;
+    }
+    
+    &__container,
+    &__left-side,
+    &__right-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    &__left-side {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.54px;
+        order: 1;
+    }
+    &__copyright {
+        color: #fff;
+        order: 1;
+    }
+    &__privacy-policy {
+        color: #feaa66;
+        text-decoration: underline;
+        transition: opacity .3s ease;
+        &:hover {
+            opacity: .6;
+            transition: opacity .3s ease;
+        }
+    }
+    &__right-side {
+        letter-spacing: 0.54px;
+        .fa {
+            color: $accent;
+            @include font-size(30);
+            margin-right: 10px;
+        }
+        .fa-phone {
+            transform: rotate(95deg);
+        }
+    }
+    
+    &__privacy-policy,
+    &__copyright,
+    &__phone,
+    &__email {
+        margin-bottom: 15px;
+    }
+    
+    &__phone a,
+    &__email a {
+        display: flex;
+        align-items: center;
+        transition: opacity .3s ease;
+        &:hover {
+            opacity: .6;
+            transition: opacity .3s ease;
+        }
+    }
+    
+    &__phone p {
+        display: block;
+        @include font-size(30);
+        letter-spacing: 0.9px;
+    }
+    
+    &__email p {
+        color: #fff;
+        @include font-size(21);
+        font-weight: bold;
+        letter-spacing: 0.63px;
+    }
+}

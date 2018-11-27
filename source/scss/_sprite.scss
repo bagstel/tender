@@ -1,0 +1,178 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$route1-name: 'route1';
+$route1-x: 102px;
+$route1-y: 0px;
+$route1-offset-x: -102px;
+$route1-offset-y: 0px;
+$route1-width: 320px;
+$route1-height: 40px;
+$route1-total-width: 422px;
+$route1-total-height: 322px;
+$route1-image: 'sprite.png';
+$route1: (102px, 0px, -102px, 0px, 320px, 40px, 422px, 322px, 'sprite.png', 'route1', );
+$route2-name: 'route2';
+$route2-x: 102px;
+$route2-y: 40px;
+$route2-offset-x: -102px;
+$route2-offset-y: -40px;
+$route2-width: 320px;
+$route2-height: 23px;
+$route2-total-width: 422px;
+$route2-total-height: 322px;
+$route2-image: 'sprite.png';
+$route2: (102px, 40px, -102px, -40px, 320px, 23px, 422px, 322px, 'sprite.png', 'route2', );
+$route3-1-name: 'route3-1';
+$route3-1-x: 102px;
+$route3-1-y: 86px;
+$route3-1-offset-x: -102px;
+$route3-1-offset-y: -86px;
+$route3-1-width: 31px;
+$route3-1-height: 204px;
+$route3-1-total-width: 422px;
+$route3-1-total-height: 322px;
+$route3-1-image: 'sprite.png';
+$route3-1: (102px, 86px, -102px, -86px, 31px, 204px, 422px, 322px, 'sprite.png', 'route3-1', );
+$route3-name: 'route3';
+$route3-x: 0px;
+$route3-y: 0px;
+$route3-offset-x: 0px;
+$route3-offset-y: 0px;
+$route3-width: 102px;
+$route3-height: 303px;
+$route3-total-width: 422px;
+$route3-total-height: 322px;
+$route3-image: 'sprite.png';
+$route3: (0px, 0px, 0px, 0px, 102px, 303px, 422px, 322px, 'sprite.png', 'route3', );
+$route4-name: 'route4';
+$route4-x: 0px;
+$route4-y: 303px;
+$route4-offset-x: 0px;
+$route4-offset-y: -303px;
+$route4-width: 319px;
+$route4-height: 19px;
+$route4-total-width: 422px;
+$route4-total-height: 322px;
+$route4-image: 'sprite.png';
+$route4: (0px, 303px, 0px, -303px, 319px, 19px, 422px, 322px, 'sprite.png', 'route4', );
+$route5-name: 'route5';
+$route5-x: 102px;
+$route5-y: 63px;
+$route5-offset-x: -102px;
+$route5-offset-y: -63px;
+$route5-width: 305px;
+$route5-height: 23px;
+$route5-total-width: 422px;
+$route5-total-height: 322px;
+$route5-image: 'sprite.png';
+$route5: (102px, 63px, -102px, -63px, 305px, 23px, 422px, 322px, 'sprite.png', 'route5', );
+$scroll-name: 'scroll';
+$scroll-x: 261px;
+$scroll-y: 86px;
+$scroll-offset-x: -261px;
+$scroll-offset-y: -86px;
+$scroll-width: 45px;
+$scroll-height: 73px;
+$scroll-total-width: 422px;
+$scroll-total-height: 322px;
+$scroll-image: 'sprite.png';
+$scroll: (261px, 86px, -261px, -86px, 45px, 73px, 422px, 322px, 'sprite.png', 'scroll', );
+$slider-arrow-left-name: 'slider-arrow-left';
+$slider-arrow-left-x: 133px;
+$slider-arrow-left-y: 86px;
+$slider-arrow-left-offset-x: -133px;
+$slider-arrow-left-offset-y: -86px;
+$slider-arrow-left-width: 64px;
+$slider-arrow-left-height: 73px;
+$slider-arrow-left-total-width: 422px;
+$slider-arrow-left-total-height: 322px;
+$slider-arrow-left-image: 'sprite.png';
+$slider-arrow-left: (133px, 86px, -133px, -86px, 64px, 73px, 422px, 322px, 'sprite.png', 'slider-arrow-left', );
+$slider-arrow-right-name: 'slider-arrow-right';
+$slider-arrow-right-x: 197px;
+$slider-arrow-right-y: 86px;
+$slider-arrow-right-offset-x: -197px;
+$slider-arrow-right-offset-y: -86px;
+$slider-arrow-right-width: 64px;
+$slider-arrow-right-height: 73px;
+$slider-arrow-right-total-width: 422px;
+$slider-arrow-right-total-height: 322px;
+$slider-arrow-right-image: 'sprite.png';
+$slider-arrow-right: (197px, 86px, -197px, -86px, 64px, 73px, 422px, 322px, 'sprite.png', 'slider-arrow-right', );
+$spritesheet-width: 422px;
+$spritesheet-height: 322px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($route1, $route2, $route3-1, $route3, $route4, $route5, $scroll, $slider-arrow-left, $slider-arrow-right, );
+$spritesheet: (422px, 322px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

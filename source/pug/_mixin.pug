@@ -1,0 +1,10 @@
+mixin svg (name, mod)
+    - mod = mod || ' '
+    svg(class="icon icon-" + name + ' ' + mod)
+        use(xlink:href="assets/css/symbol/sprite.svg#" + name)
+
+mixin picture (path, name, array, alt)
+    picture
+        each item in array
+            source(srcset= path + name + '@' + item + '.png', media="(max-width: " + item + "px)")
+        img(src= path + name + '@fallback.png', alt= alt)

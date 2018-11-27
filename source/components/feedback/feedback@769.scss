@@ -1,0 +1,31 @@
+.feedback {
+    &__content {
+        max-width: 740px;
+    }
+    
+    &__form {
+        
+        &-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    
+        &-label--user {
+            margin-right: 20px;
+        }
+    
+        &-label--user,
+        &-label--phone {
+            width: 330px;
+        }
+        
+        &-label--user input {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 0;
+        }
+        &-label--phone input {
+            border-top-right-radius: 10px;
+        }
+    }
+}

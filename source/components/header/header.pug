@@ -1,0 +1,22 @@
+mixin header
+    //- The header of the site
+    header.header
+        .header__container
+            .header__aside
+                .menu-button
+                    input(type="checkbox").burger-check#burger-check
+                    label(for="burger-check").burger
+                .logo: img(src= data.headerLogoPath, alt= data.headerLogoAlt)
+                .slogan= data.headerSlogan
+            .header__bside
+                ul.details
+                    li.details__item
+                        a(href="tel:+7(999)-111-11-11")
+                            i.fa.fa-phone
+                            p.details__phone +7(999)-111-11-11
+                    li.details__item
+                        i.fa.fa-calendar-alt
+                        p.details__schedule без выходных и праздников
+                    li.details__item
+                        i.fa.fa-clock
+                        p.details__timetable работаем с 8:00 до 23:00

@@ -1,0 +1,25 @@
+mixin feedback
+    section.feedback#feedback
+        .feedback__container
+            .heading-3.heading-3--white: h3= data.feedbackTitle
+            .feedback__wrapper
+                .feedback__content
+                    h3= data.feedbackFormTitle
+                    form(method="post", action="/").feedback__form
+                        .feedback__form-wrapper
+
+                            label.feedback__form-label.feedback__form-label--user
+                                input(type="text", required, name="name").feedback__form-input
+                                div.feedback__form-required!= data.feedbackInput1Placeholder
+
+                            label.feedback__form-label.feedback__form-label--phone
+                                input(type="tel", required, name="tel").feedback__form-input
+                                div.feedback__form-required!= data.feedbackInput2Placeholder
+
+                            label.feedback__form-label.feedback__form-label--envelope
+                                input(type="email", required, name="email").feedback__form-input
+                                div.feedback__form-required!= data.feedbackInput3Placeholder
+
+                            textarea(name="message", placeholder= data.feedbackTextareaPlaceholder).feedback__form-textarea
+
+                            button.btn ОТПРАВИТЬ

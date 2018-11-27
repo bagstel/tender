@@ -1,0 +1,119 @@
+.special-offer {
+    background: resolve("bg-spacial-offer.png") no-repeat center / cover;
+    &__container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 37px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        * {
+            z-index: 20;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 75px;
+    }
+    &__item {
+        font-family: $roboto-font;
+        max-width: 420px;
+        margin-bottom: 20px;
+        &:hover {
+            .btn {
+                opacity: 1;
+                position: static;
+                transition: .3s;
+            }
+            .special-offer__body {
+                opacity: 1;
+                transition: .3s;
+            }
+        }
+    }
+    &__header {
+        background: #a2a2a2;
+        padding: 30px 10px 10px 10px;
+        text-align: center;
+        &--brown {
+            background-color: #ce9a70;
+        }
+        &--dark-brown {
+            background-color: #94613a;
+        }
+    }
+    &__title {
+        @include font-size(48);
+        @include line-height(20);
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        color: #fff;
+        @include font-size(24);
+        font-weight: bold;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        opacity: 0.8;
+        padding: 39px 31px 34px;
+        transition: .3s;
+        .btn {
+            opacity: 0;
+            transition: opacity .3s ease;
+        }
+    }
+    &__price {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        justify-content: space-between;
+        color: #ff3431;
+        @include font-size(40);
+        font-weight: bold;
+        margin-bottom: 34px;
+    }
+    &__integer {
+        text-decoration: underline;
+        margin-right: 5px;
+    }
+    &__period {
+        width: 53px;
+        color: #000;
+        @include font-size(12);
+        @include line-height(14);
+        text-transform: uppercase;
+    }
+    &__scale {
+        color: #010101;
+    }
+    &__sublist {
+        margin: 0 20px 80px;
+    }
+    &__subitem {
+        @include font-size(20);
+        font-weight: bold;
+        margin-bottom: 10px;
+        &:before {
+            content: '\f00c';
+            color: #68cd32;
+            margin-right: 5px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__note {
+        font-family: $roboto-font;
+        color: #595959;
+        @include font-size(18);
+        font-weight: 700;
+        letter-spacing: 1.35px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}

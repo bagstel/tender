@@ -1,0 +1,11 @@
+mixin what-we-do
+    section.what-we-do#what-we-do
+        .what-we-do__container
+            .heading-3: h3= data.whatWeDoTitle
+            ul.what-we-do__list
+                each item in data.whatWeDoItems
+                    li.what-we-do__item
+                        .what-we-do__item-icon
+                            i(class="fa fa-" + item.icon)
+                        .what-we-do__item-subtitle= item.title
+                        p.what-we-do__item-content= item.content

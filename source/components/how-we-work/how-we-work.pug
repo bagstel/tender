@@ -1,0 +1,16 @@
+mixin how-we-work
+    section.how-we-work#how-we-work
+        .how-we-work__container
+            .heading-3: h3= data.howWeWork.title
+            ul.how-we-work__list
+                - for (var i = 0; i < 6; i++)
+                    - var n = i + 1;
+                    li.how-we-work__item
+                        .how-we-work__icon
+                            i.fa.fa-cog
+                        div(class="how-we-work__text how-we-work__text-route-" + n)= data.howWeWork.text[i]
+                        .how-we-work__hidden-text= data.howWeWork.hiddenText[i]
+
+                        -if (i < 5)
+                            div(class="how-we-work__route-" + n)
+                            div(class="how-we-work__route-" + n + "-num")= n

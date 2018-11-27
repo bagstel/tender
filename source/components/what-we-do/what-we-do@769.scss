@@ -1,0 +1,10 @@
+.what-we-do {
+    &__list {
+        flex-flow: wrap row;
+    }
+    &__item {
+        margin-bottom: 50px;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+}

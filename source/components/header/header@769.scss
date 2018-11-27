@@ -1,0 +1,23 @@
+.details {
+    justify-content: space-between;
+
+    &__item i {
+        margin-right: 15px;
+    }
+    &__item {
+        &:nth-child(2),
+        &:nth-child(3) {
+            display: flex;
+        }
+    }
+    .fa {
+        &.fa-phone {
+            border: none;
+            border-radius: 0;
+            padding: 0;
+        }
+    }
+    &__phone {
+        display: flex;
+    }
+}

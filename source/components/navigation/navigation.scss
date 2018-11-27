@@ -1,0 +1,35 @@
+// Navigation
+.navigation {
+    $navigation__transition: all 0.5s ease-in-out;
+    background: resolve('bg-how-to-win.png') repeat top left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //background-color: #956B4C;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: $navigation__transition;
+    
+    &__link {
+        display: block;
+        color: #fff;
+        padding-bottom: 10px;
+        text-align: center;
+        &:hover {
+            color: #513d2ade;
+        }
+    }
+    
+    &--active {
+        padding: 20px;
+        max-height: 100vh;
+        transition: $navigation__transition;
+        .navigation__link {
+            display: block;
+            color: #fff;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+    }
+}

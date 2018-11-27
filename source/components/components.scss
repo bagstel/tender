@@ -1,0 +1,51 @@
+@import "cookie-block/cookie-block";
+@import "header/header";
+@import "navigation/navigation";
+@import "intro/intro";
+@import "who-we-are/who-we-are";
+@import "what-we-do/what-we-do";
+@import "why-we/why-we";
+@import "what-you-get/what-you-get";
+@import "how-to-win/how-to-win";
+@import "how-we-work/how-we-work";
+@import "special-offer/special-offer";
+@import "reviews/reviews";
+@import "feedback/feedback";
+@import "footer/footer";
+
+@media only screen and (min-width: 481px) {
+    @import "header/header@481";
+    @import "intro/intro@481";
+    @import "what-you-get/what-you-get@481";
+    @import "how-to-win/how-to-win@481";
+    @import "how-we-work/how-we-work@481";
+    @import "special-offer/special-offer@481";
+    @import "reviews/reviews@481";
+    @import "feedback/feedback@469";
+}
+@media only screen and (min-width: 769px) {
+    @import "cookie-block/cookie-block@769";
+    @import "header/header@769";
+    @import "intro/intro@769";
+    @import "what-we-do/what-we-do@769";
+    @import "what-you-get/what-you-get@769";
+    @import "how-we-work/how-we-work@769";
+    @import "reviews/reviews@769";
+    @import "feedback/feedback@769";
+    @import "footer/footer@769";
+}
+@media only screen and (min-width: 981px) {
+    @import "intro/intro@981";
+    @import "why-we/why-we@981";
+    @import "how-we-work/how-we-work@981";
+    @import "feedback/feedback@981";
+}
+@media only screen and (min-width: 1025px) {
+
+}
+@media only screen and (min-width: 1281px) {
+    @import "cookie-block/cookie-block@1281";
+    @import "what-you-get/what-you-get@1281";
+    @import "how-we-work/how-we-work@1281";
+    @import "feedback/feedback@1281";
+}

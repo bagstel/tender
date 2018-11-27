@@ -1,0 +1,10 @@
+.profit {
+    &__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    &__item {
+        margin: 2%;
+    }
+}

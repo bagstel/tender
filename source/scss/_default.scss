@@ -1,0 +1,83 @@
+@import "_variables";
+@import "_mixins";
+@import "_normalize";
+@import "_fonts";
+@import "_sprite";
+@import "fontawesome/fontawesome";
+@import "fontawesome/solid";
+@import "fontawesome/brands";
+@import "fontawesome/regular";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-family: $default-font;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    min-width: 320px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+h3 {
+    @include font-size(35);
+    @include line-height(41);
+    text-align: center;
+    margin: 0 0 32px 0;
+}
+
+.heading-3 {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    &--white {
+        color: #fff;
+    }
+    h3 {
+        letter-spacing: 2.5px;
+        padding: 0 10px 4px;
+        border-bottom: 2px solid #ffab67;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.btn {
+    @include btn(22);
+}
+
+@media only screen and (min-width: 481px) {
+    body,
+    html {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}

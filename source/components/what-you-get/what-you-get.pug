@@ -1,0 +1,16 @@
+mixin what-you-get
+    section.what-you-get#what-you-get
+        .heading-3: h3= data.whatYouGetTitle
+        .what-you-get__wrapper
+            .what-you-get__container
+                .what-you-get__content
+                    ul.profit__list
+                        each item in data.whatYouGet
+                            li.profit__item
+                                .profit__icon
+                                    i.fa.fa-cog
+                                .profit__box
+                                    .profit__title
+                                        p= item.profitTitle
+                                    .profit__hidden-text
+                                        p= item.profitHiddenText

@@ -1,0 +1,16 @@
+.footer {
+    &__container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__left-side,
+    &__right-side {
+        align-items: flex-start;
+        text-align: left;
+    }
+    &__left-side,
+    &__copyright {
+        order: 0;
+    }
+}

@@ -1,0 +1,38 @@
+.feedback {
+    
+    min-height: 945px;
+    
+    &__content {
+        width: 100%;
+        max-width: 1253px
+    }
+    
+    &__form {
+        &-label {
+            margin-bottom: 20px;
+        }
+        &-label--user,
+        &-label--phone,
+        &-label--envelope {
+            width: 362px;
+        }
+        
+        &-label--user,
+        &-label--phone {
+            margin-right: 28px;
+        }
+        
+        &-label--phone input {
+            border-top-right-radius: 0;
+        }
+        
+        &-label--envelope input {
+            border-top-right-radius: 10px;
+        }
+        
+        &-textarea {
+            width: 1142px;
+            margin-bottom: 28px;
+        }
+    }
+}

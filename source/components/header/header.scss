@@ -1,0 +1,144 @@
+.header {
+    background: resolve('bg-header.png') repeat left top;
+    &__container {
+        max-width: 1440px;
+        height: 100px;
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__aside {
+        display: flex;
+        align-items: center;
+    }
+    &__bside {
+        height: 100%;
+    }
+}
+
+// Burger menu button
+.menu-button {
+    margin-right: 10px;
+    .burger {
+        $burger--thickness: 4px;
+        $width: 28px;
+        
+        display: inline-block;
+        border: 0;
+        background: none;
+        outline: 0;
+        padding: 0;
+        cursor: pointer;
+        border-bottom: $burger--thickness solid $accent;
+        width: $width;
+        transition: border-bottom 1s ease-in-out;
+        // Fix for extra space in Firefox
+        &::-moz-focus-inner {
+            border: 0;
+            padding: 0;
+        }
+        &:before {
+            content: "";
+            display: block;
+            border-bottom: $burger--thickness solid $accent;
+            width: 100%;
+            margin-bottom: 5px;
+            transition: transform 0.5s ease-in-out;
+        }
+        &:after {
+            content: "";
+            display: block;
+            border-bottom: $burger--thickness solid $accent;
+            width: 100%;
+            margin-bottom: 5px;
+            transition: transform 0.5s ease-in-out;
+        }
+        &-check {
+            display: none;
+            &:checked ~ .burger {
+                border-bottom: $burger--thickness solid transparent;
+                transition: border-bottom 0.8s ease-in-out;
+                &:before {
+                    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                    transition: transform 0.5s ease-in-out;
+                }
+                
+                &:after {
+                    transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                    transition: transform 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+// Logo
+.logo {
+    img {
+        max-width: 60px;
+    }
+}
+
+// Slogan
+.slogan {
+    max-width: 184px;
+    color: #fff;
+    @include font-size(26);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__item {
+        &:nth-child(2),
+        &:nth-child(3) {
+            display: none;
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__item a {
+        display: flex;
+        align-items: center;
+        transition: opacity .3s ease;
+        &:hover {
+            opacity: .6;
+            transition: opacity .3s ease;
+        }
+    }
+    .fa {
+        &.fa-phone {
+            transform: rotate(90deg);
+            border: 2px solid $accent;
+            border-radius: 50%;
+            padding: 7px;
+        }
+        color: $accent;
+        font-size: 24px;
+    }
+    &__phone,
+    &__schedule,
+    &__timetable {
+        color: #fff;
+        font-weight: 600;
+    }
+    &__phone {
+        display: none;
+        @include font-size(30);
+        letter-spacing: 0.9px;
+    }
+    &__schedule,
+    &__timetable {
+        @include font-size(18);
+        letter-spacing: 0.54px;
+    }
+}

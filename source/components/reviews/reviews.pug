@@ -1,0 +1,15 @@
+mixin reviews
+    section.reviews
+        .reviews__container
+            .reviews__content
+                .heading-3: h3= data.reviewsTitle
+                .slider.owl-carousel.owl-theme
+                    - for (var i = 0; i < 6; i++)
+                        .slider__container
+                            .slider__wrapper
+                                .slider__image
+                                    img(src= data.reviews.image, alt="User's avatar")
+                                .slider__content
+                                    .slider__name= data.reviews.name
+                                    .slider__position= data.reviews.position
+                                    .slider__text= data.reviews.text

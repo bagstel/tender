@@ -1,0 +1,7 @@
+mixin navigation
+    // Page navigation
+    nav.navigation
+        ul.navigation__list
+            each item in data.nav
+                li.navigation__item
+                    a(href= item.link).navigation__link= item.text

@@ -1,0 +1,220 @@
+{
+  "headerLogoPath": "assets/images/logo.png",
+  "headerLogoAlt": "Site logo",
+  "headerSlogan": "помощь и сопровождение в тендерах!",
+  "headerIconInfo": "info",
+  "nav": [
+    {
+      "link": "#who-we-are",
+      "text": "Кто мы?"
+    },
+    {
+      "link": "#what-we-do",
+      "text": "Что мы делаем?"
+    },
+    {
+      "link": "#why-we",
+      "text": "Почему мы?"
+    },
+    {
+      "link": "#what-you-get",
+      "text": "Что вы получаете?"
+    },
+    {
+      "link": "#how-to-win",
+      "text": "Как выиграть тендер уже завтра?"
+    },{
+      "link": "#how-we-work",
+      "text": "Как мы работаем?"
+    },{
+      "link": "#special-offer",
+      "text": "Спецпредложение"
+    },{
+      "link": "#reviews",
+      "text": "Отзывы"
+    },{
+      "link": "#feedback",
+      "text": "Как с нами связаться"
+    }
+  ],
+  "introTitle": "Помощь и сопровождение  тендеров",
+  "introContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "introButton": "надоело!",
+  "whoWeAreTitle": "Кто мы?",
+  "whoWeAreText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "whatWeDoTitle": "Что мы делаем?",
+  "whatWeDoItems": [
+    {
+      "icon": "edit",
+      "title": "Изготовим ЭЦП",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+    },
+    {
+      "icon": "search",
+      "title": "Изготовим ЭЦП",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+    },
+    {
+      "icon": "edit",
+      "title": "Изготовим ЭЦП",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+    },
+    {
+      "icon": "edit",
+      "title": "Изготовим ЭЦП",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+    },
+    {
+      "icon": "edit",
+      "title": "Изготовим ЭЦП",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+    },
+    {
+      "icon": "calendar",
+      "title": "Изготовим ЭЦП",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+    },
+    {
+      "icon": "calendar-check",
+      "title": "Изготовим ЭЦП",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+    },
+    {
+      "icon": "briefcase",
+      "title": "Изготовим ЭЦП",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+    }
+  ],
+  "whyWeTitle": "Почему мы?",
+  "whyWe": [
+    {
+      "ImagesPath": "assets/images/",
+      "ImagesName": "why-we-icon-left",
+      "ImagesResolutions": [
+        320,
+        480,
+        768
+      ],
+      "classForColor": "why-we__subtitle--red",
+      "imageAlt": "image Alt",
+      "subTitle": "вы работаете с <span>другими</span>:",
+      "subItemText": "не получаете гарантий",
+      "icon": "times"
+    },
+    {
+      "ImagesPath": "assets/images/",
+      "ImagesName": "why-we-icon-right",
+      "ImagesResolutions": [
+        320,
+        480,
+        768
+      ],
+      "classForColor": "why-we__subtitle--green",
+      "imageAlt": "image Alt",
+      "subTitle": "вы работаете с <span>нами</span>:",
+      "subItemText": "получаете гарантии",
+      "icon": "check"
+    }
+  ],
+  "whatYouGetTitle": "Что вы получаете?",
+  "whatYouGet": [
+    {
+      "profitTitle": "Выгода 1",
+      "profitHiddenText": "Дополнительный скрытый текст 1"
+    },
+    {
+      "profitTitle": "Выгода 2",
+      "profitHiddenText": "скрытый текст Дополнительный скрытый текст 2"
+    },
+    {
+      "profitTitle": "Выгода 3",
+      "profitHiddenText": "Дополнительный скрытый текст текст текст 3"
+    }
+  ],
+  "howToWin": {
+    "title": "Как выиграть тендер уже завтра?",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "btn": "подробнее"
+  },
+  "howWeWork": {
+    "title": "Как мы работаем?",
+    "text": [
+      "Заявка на сайте или по телефону",
+      "Заявка на сайте или по телефону",
+      "Заявка на сайте или по телефону",
+      "Заявка на сайте или по телефону",
+      "Заявка на сайте или по телефону",
+      "Заявка на сайте или по телефону"
+    ],
+    "hiddenText": [
+      "Оплата производится в течении 1 банковских дней после передачи  Выполненных нами работ и услуг, согласно заявленных по договор",
+      "Оплата производится в течении 2 банковских дней после передачи  Выполненных нами работ и услуг, согласно заявленных по договор",
+      "Оплата производится в течении 3 банковских дней после передачи  Выполненных нами работ и услуг, согласно заявленных по договор",
+      "Оплата производится в течении 4 банковских дней после передачи  Выполненных нами работ и услуг, согласно заявленных по договор",
+      "Оплата производится в течении 5 банковских дней после передачи  Выполненных нами работ и услуг, согласно заявленных по договор",
+      "Оплата производится в течении 6 банковских дней после передачи  Выполненных нами работ и услуг, согласно заявленных по договор"
+    ]
+  },
+  "specialOfferTitle": "Спецпредложение",
+  "specialOfferButton": "ПОДРОБНЕЕ",
+  "specialOffer": [
+    {
+      "title": "3 месяца",
+      "subtitle": "для начинающих",
+      "costInteger": "15",
+      "costFraction": "000",
+      "period": "рублей в месяц",
+      "commission": "+1",
+      "scale": "%*",
+      "subitem": [
+        "Это 450 найденных закупок",
+        "В среднем 30 проведенных аукционов",
+        "Это 450 найденных закупок",
+        "Это 450 найденных закупок"
+      ]
+    },
+    {
+      "title": "6 месяцев",
+      "subtitle": "для професионалов",
+      "costInteger": "12",
+      "costFraction": "000",
+      "period": "рублей в месяц",
+      "commission": "+1",
+      "scale": "%*",
+      "subitem": [
+        "Это 450 найденных закупок",
+        "В среднем 30 проведенных аукционов",
+        "Это 450 найденных закупок",
+        "Это 450 найденных закупок"
+      ]
+    },
+    {
+      "title": "12 месяцев ",
+      "subtitle": "для больших объемов",
+      "costInteger": "10",
+      "costFraction": "000",
+      "period": "рублей в месяц",
+      "commission": "+1",
+      "scale": "%*",
+      "subitem": [
+        "Это 450 найденных закупок",
+        "В среднем 30 проведенных аукционов",
+        "Это 450 найденных закупок",
+        "Это 450 найденных закупок"
+      ]
+    }
+  ],
+  "reviewsTitle":"Отзывы",
+  "reviews": {
+    "image": "assets/images/icon-for-slider.png",
+    "name": "Наталья Петрова",
+    "position": " Предприниматель",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit"
+  },
+  "feedbackTitle":"Как с нами связаться",
+  "feedbackFormTitle":"Заполните форму и получите консультацию нашего специалиста бесплатно",
+  "feedbackInput1Placeholder":"Ваше имя <span>*</span>",
+  "feedbackInput2Placeholder":"Ваш телефон <span>*</span>",
+  "feedbackInput3Placeholder":"Ваш e-mail",
+  "feedbackTextareaPlaceholder":"Текст сообщения..."
+}

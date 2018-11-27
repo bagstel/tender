@@ -1,0 +1,62 @@
+.how-we-work {
+    &__list {
+        max-width: 970px;
+    }
+    &__item {
+        margin-bottom: 190px;
+        &:nth-child(1) {
+            margin-right: 290px;
+        }
+        &:nth-child(2) {
+            margin-right: 290px;
+        }
+        &:nth-child(4) {
+            margin-bottom: 100px;
+        }
+        &:nth-child(5) {
+            margin-right: 290px;
+            margin-bottom: 100px;
+        }
+        &:nth-child(6) {
+            margin-right: 290px;
+            margin-bottom: 100px;
+        }
+    }
+    &__text {
+        bottom: -44px;
+        width: 400px;
+    }
+    &__route {
+        &-2 {
+            left: 80%;
+            &-num {
+                left: 220%;
+            }
+        }
+        &-3 {
+            width: 202px;
+            height: 303px;
+            bottom: -208%;
+            left: 100%;
+            @include sprite($route3);
+            &-num {
+                bottom: -83%;
+                left: 190%;
+            }
+        }
+        &-4 {
+            &-num {
+                bottom: 57%;
+                left: -140%;
+            }
+        }
+        &-5 {
+            bottom: 40%;
+            left: -250%;
+            &-num {
+                bottom: 50%;
+                left: -130%;
+            }
+        }
+    }
+}
