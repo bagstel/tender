@@ -1,4 +1,4 @@
-/* *************** Clear public folder *************** */
+/* *************** Clear docs folder *************** */
 module.exports = function () {
-    $.gulp.task('clean:public', () => $.del(`./${$.paths.dest.baseDir}`));
+    $.gulp.task('clean:docs', () => $.del(`./${$.paths.dest.baseDir}`));
 };

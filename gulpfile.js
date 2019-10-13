@@ -22,7 +22,7 @@ $.tasks.forEach(task => {
 });
 
 /* *************** Default *************** */
-$.gulp.task('default', $.gulp.series('clean:public',
+$.gulp.task('default', $.gulp.series('clean:docs',
     $.gulp.parallel('copy', 'sprite:sprites.bitmap', 'sprite:svg'),
     $.gulp.parallel('scss', 'pug', 'js'),
     'server'

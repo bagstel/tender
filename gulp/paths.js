@@ -23,14 +23,14 @@ module.exports = {
         }
     },
     dest: {
-        baseDir: './public/',
-        html: './public/',
-        css: './public/assets/css/',
-        js: './public/assets/js/',
-        images: './public/assets/images/',
-        fonts: './public/assets/fonts/',
+        baseDir: './docs/',
+        html: './docs/',
+        css: './docs/assets/css/',
+        js: './docs/assets/js/',
+        images: './docs/assets/images/',
+        fonts: './docs/assets/fonts/',
         sprite: {
-            images: './public/assets/css/',
+            images: './docs/assets/css/',
             scss: './source/scss/'
         }
     }
